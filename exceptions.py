@@ -2,7 +2,7 @@ class ZeroDivision(Exception):
 
     def __init__(self):
         
-        self.message = "Error! integer devision by zero is prohibited"
+        self.message = "Error! integer division by zero is prohibited"
         self.status_code = 422 #Unprocessable Entity
         super(ZeroDivision, self).__init__(self.message, self.status_code)
 

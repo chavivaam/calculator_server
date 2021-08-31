@@ -18,7 +18,7 @@ def analyze_request():
         ans = calculate_exp(operand_l, operand_r, operator)
         return json.dumps(ans), 200
 
-    except exceptions.ZeroDevision as e:
+    except exceptions.ZeroDivision as e:
         return json.dumps(e.message), e.status_code
 
     except exceptions.InvalidOperand as e:

@@ -1,6 +1,6 @@
 import unittest
 import calc
-
+import exceptions
 
 class TestCalc(unittest.TestCase):
 
@@ -25,7 +25,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-1, -1), "-1/-1=1")
         self.assertEqual(calc.divide(5, 2), "5/2=2.5")
 
-        with self.assertRaises(ZeroDivisionError):
+        with self.assertRaises(exceptions.ZeroDivision):
             calc.divide(10, 0)
 
 if __name__ == '__main__':

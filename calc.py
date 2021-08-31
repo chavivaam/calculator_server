@@ -20,7 +20,7 @@ def multiply(x, y):
 def divide(x, y):
     """Divide Function"""
     if y == 0:
-        raise exceptions.ZeroDevision()
+        raise exceptions.ZeroDivision()
     
     return "{}/{}={}".format(x, y, str(x / y).rstrip(".0"))
 #===============================================================
